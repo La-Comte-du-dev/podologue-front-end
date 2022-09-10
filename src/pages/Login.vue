@@ -4,7 +4,7 @@
       <img src="../assets/logo.svg" alt="podologue" />
       <h1>Bienvenue</h1>
       <div class="hr"></div>
-      <form action="submit">
+      <form>
         <div>
           <span class="p-float-label">
             <InputText
@@ -38,6 +38,7 @@
 <script setup lang="ts">
 import InputText from "primevue/inputtext";
 import Button from "primevue/button";
+import { fetchLogin } from "../services/api.service";
 
 let invalid = false;
 let username = "";
@@ -51,6 +52,7 @@ function setPassword(event: any) {
 }
 function onsubmit() {
   console.log(username, password);
+  fetchLogin(username, password);
 }
 </script>
 
