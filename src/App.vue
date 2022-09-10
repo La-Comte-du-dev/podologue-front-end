@@ -1,13 +1,20 @@
 <template>
-  <div>
+  <div class="app">
+    <router-view />
+  </div>
+  <!-- <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-  </div>
-  <Button label="primeVue"></Button>
+  </div> -->
+  <!-- <Button label="primeVue"></Button> -->
+  <!--<nav>
+    <router-link to="/">Home</router-link>
+    <router-link to="/auth">Auth</router-link>
+  </nav> -->
 </template>
 
 <script setup lang="ts">
@@ -17,15 +24,13 @@ import Button from "primevue/button";
 </script>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+/* .app {
+  height: 100%;
+  background: rgb(245, 188, 170);
+  background: linear-gradient(
+    45deg,
+    rgba(245, 188, 170, 1) 73%,
+    rgba(243, 151, 157, 1) 100%
+  );
+} */
 </style>
